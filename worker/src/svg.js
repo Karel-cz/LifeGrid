@@ -39,10 +39,12 @@ export function text(x, y, content, options = {}) {
         fontWeight = '400',
         fontFamily = 'Inter, sans-serif',
         textAnchor = 'start',
-        dominantBaseline = 'auto'
+        dominantBaseline = 'auto',
+        escape = true
     } = options;
 
-    return `<text x="${x}" y="${y}" fill="${fill}" font-size="${fontSize}" font-weight="${fontWeight}" font-family="${fontFamily}" text-anchor="${textAnchor}" dominant-baseline="${dominantBaseline}">${escapeXml(content)}</text>`;
+    const inner = escape ? escapeXml(content) : content;
+    return `<text x="${x}" y="${y}" fill="${fill}" font-size="${fontSize}" font-weight="${fontWeight}" font-family="${fontFamily}" text-anchor="${textAnchor}" dominant-baseline="${dominantBaseline}">${inner}</text>`;
 }
 
 /**
