@@ -1,3 +1,4 @@
+![alt text](<github banner.png>)
 # LifeGrid
 
 **Premium Dynamic Wallpapers for iOS and Android Lock Screens.**
