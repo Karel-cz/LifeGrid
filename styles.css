@@ -344,6 +344,12 @@ body {
   margin: 0 auto;
 }
 
+.types-section,
+.customize-section {
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: var(--space-16);
